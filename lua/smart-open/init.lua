@@ -1,6 +1,6 @@
-local DbClient = require("telescope._extensions.smart_open.dbclient")
-local default_config = require("telescope._extensions.smart_open.default_config")
-local history = require("telescope._extensions.smart_open.history")
+local DbClient = require("smart-open.dbclient")
+local default_config = require("smart-open.default_config")
+local history = require("smart-open.history")
 
 local config = vim.tbl_deep_extend("force", {}, default_config)
 

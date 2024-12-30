@@ -1,5 +1,5 @@
 local has_devicons, devicons = pcall(require, "nvim-web-devicons")
-local format_filepath = require("telescope._extensions.smart_open.display.format_filepath")
+local format_filepath = require("smart-open.display.format_filepath")
 local sum = require("smart-open.util.table").sum
 local combine_display = require("smart-open.util.combine_display")
 

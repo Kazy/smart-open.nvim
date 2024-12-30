@@ -12,7 +12,7 @@ local function process(prompt, cancel_token, encoded_options, encoded_entries)
 
     local results = {}
 
-    local set_relevance = require("telescope._extensions.smart_open.finder.set_relevance")(options)
+    local set_relevance = require("smart-open.finder.set_relevance")(options)
     local priority_insert = require("smart-open.util.priority_insert")
 
     for _, entry in ipairs(entries) do

@@ -3,7 +3,7 @@ if not has_telescope then
   error("This plugin requires telescope.nvim (https://github.com/nvim-telescope/telescope.nvim)")
 end
 
-local DbClient = require("telescope._extensions.smart_open.dbclient")
+local DbClient = require("smart_open.dbclient")
 local picker = require("telescope._extensions.smart_open.picker")
 local config = require("smart-open").config
 

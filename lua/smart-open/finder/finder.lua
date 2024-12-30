@@ -1,4 +1,4 @@
-local file_scanner = require("telescope._extensions.smart_open.file_scanner")
+local file_scanner = require("smart-open.file_scanner")
 local create_entry_data = require("smart-open.entry.create")
 local create_multithread_matcher = require("smart-open.matching.multithread.create")
 local priority_insert = require("smart-open.util.priority_insert")
@@ -96,6 +96,7 @@ return function(history, opts, context)
       match_runner.init(
         prompt,
         vim.schedule_wrap(function(entry)
+          vim.print(entry.path)
           local to_insert = vim.tbl_extend(
             "keep",
             { ordinal = entry.relevance, display = opts.display, prompt = prompt },
